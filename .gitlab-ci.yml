@@ -1,0 +1,14 @@
+stages:
+- release
+
+release:
+  stage: release
+  image: mhart/alpine-node
+  script:
+  - npm install
+  - $(npm bin)/vsce package
+  artifacts:
+    paths:
+    - "*.vsix"
+  tags:
+  - docker

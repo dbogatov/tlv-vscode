@@ -32,8 +32,8 @@
 		"configuration": {
 			"title": "",
 			"properties": {
-				"tlverilog.instancePrefix" :{
-					"type":"string",
+				"tlverilog.instancePrefix": {
+					"type": "string",
 					"default": "u_",
 					"description": "The prefix to use when instantiating a new module"
 				}
@@ -54,6 +54,7 @@
 		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
 	"devDependencies": {
+		"vsce": "^1.28.0",
 		"typescript": "^2.0.3",
 		"vscode": "^1.0.0",
 		"@types/node": "*"
