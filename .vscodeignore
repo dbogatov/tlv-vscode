@@ -1,0 +1,13 @@
+.vscode/**
+.gitignore
+*.vsix
+test/**
+tsconfig.json
+build.sh
+.travis.yml
+testfile.*
+
+.vscode-test/**
+out/test/**
+src/**
+**/*.map
