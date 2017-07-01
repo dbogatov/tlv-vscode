@@ -1,6 +1,6 @@
 {
 	"name": "TL-Verilog",
-	"description": "TL Verilog support for VS Code",
+	"description": "TL-Verilog support for VS Code",
 	"version": "0.0.1",
 	"publisher": "bogatov",
 	"repository": {
@@ -15,24 +15,24 @@
 	],
 	"contributes": {
 		"languages": [{
-			"id": "tl-verilog",
+			"id": "tlverilog",
 			"aliases": ["TL Verilog", "tlverilog", "tl-verilog"],
-			"extensions": [".tlv",".tlv.m4"],
+			"extensions": [".tlv", ".TLV"],
 			"configuration": "./language-configuration.json"
 		}],
 		"grammars": [{
-            "language": "tl-verilog",
-            "scopeName": "main.tlv",
-            "path": "./syntaxes/tl-verilog.tmLanguage"
-        }],
+			"language": "tlverilog",
+			"scopeName": "source.tlverilog",
+			"path": "./syntaxes/tlverilog.tmLanguage"
+		}],
 		"snippets": [{
-			"language": "tl-verilog",
+			"language": "tlverilog",
 			"path": "./snippets/snippets.json"
 		}],
 		"configuration": {
 			"title": "",
 			"properties": {
-				"tl-verilog.instancePrefix" :{
+				"tlverilog.instancePrefix" :{
 					"type":"string",
 					"default": "u_",
 					"description": "The prefix to use when instantiating a new module"
@@ -40,12 +40,12 @@
 			}
 		},
 		"commands": [{
-			"command": "extension.tl-verilog.instantiateModule",
-			"title": "TL Verilog: Instantiate Module"
+			"command": "extension.tlverilog.instantiateModule",
+			"title": "System Verilog: Instantiate Module"
 		}]
 	},
 	"activationEvents": [
-		"onLanguage:tl-verilog"
+		"onLanguage:tlverilog"
 	],
 	"main": "./out/src/extension",
 	"scripts": {

@@ -9,20 +9,20 @@ import * as path from 'path';
 export function activate(context: vscode.ExtensionContext) {
     // System Verilog Hover Provider
     context.subscriptions.push(
-        vscode.languages.registerHoverProvider('systemverilog',
-            new SystemVerilogHoverProvider()
+        vscode.languages.registerHoverProvider('tlverilog',
+            new tlverilogHoverProvider()
         )
     );
 
     // instantiate system verilog module
     context.subscriptions.push(
-        vscode.commands.registerCommand('extension.systemverilog.instantiateModule',
+        vscode.commands.registerCommand('extension.tlverilog.instantiateModule',
             instantiateModuleInteract
         )
     );
 }
 
-class SystemVerilogHoverProvider implements vscode.HoverProvider {
+class tlverilogHoverProvider implements vscode.HoverProvider {
 
     private _excludedText: RegExp;
 
@@ -39,12 +39,12 @@ class SystemVerilogHoverProvider implements vscode.HoverProvider {
             // hover word
             let targetText = document.getText(textRange);
 
-            if (targetText.search(this._excludedText) !== -1) { // systemverilog keywords
+            if (targetText.search(this._excludedText) !== -1) { // tlverilog keywords
                 return;
             } else { // find declaration
                 let declarationText = this._findDeclaration(document, position, targetText);
                 if (declarationText !== undefined) {
-                    return new vscode.Hover([ {language: 'systemverilog', value: declarationText.element}, declarationText.comment ]);
+                    return new vscode.Hover([ {language: 'tlverilog', value: declarationText.element}, declarationText.comment ]);
                 } else {
                     return;
                 }
@@ -229,7 +229,7 @@ function instantiateModule(srcpath: string) {
 
     let prefix =
         vscode.workspace
-        .getConfiguration("systemverilog")['instancePrefix'];
+        .getConfiguration("tlverilog")['instancePrefix'];
 
     let paramString = ``
     if (parametersName.length > 0) {
