@@ -5,7 +5,7 @@ release:
   stage: release
   image: mhart/alpine-node
   script:
-  - npm install
+  - npm install --unsafe-perm
   - $(npm bin)/vsce package
   artifacts:
     paths:
