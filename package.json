@@ -11,7 +11,8 @@
 		"vscode": "^1.10.0"
 	},
 	"categories": [
-		"Languages"
+		"Languages",
+		 "Themes"
 	],
 	"contributes": {
 		"languages": [{
@@ -42,7 +43,14 @@
 		"commands": [{
 			"command": "extension.tlverilog.instantiateModule",
 			"title": "System Verilog: Instantiate Module"
-		}]
+		}],
+		"themes": [
+            {
+                "label": "TLVerilog",
+                "uiTheme": "vs-dark",
+                "path": "./themes/tlverilog-color-theme.json"
+            }
+        ]
 	},
 	"activationEvents": [
 		"onLanguage:tlverilog"
