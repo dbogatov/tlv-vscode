@@ -24,17 +24,62 @@ PUBLIC '-//Apple//DTD PLIST 1.0//EN'
 				<string>keyword.other.tlverilog</string>
 			</dict>
 			<dict>
+				<!-- stages: @1, @2, ... -->
 				<key>match</key>
 				<string>@\b(\d+)\b</string>
 				<key>name</key>
-				<string>keyword.other.tlverilog</string>
+				<string>entity.name.stage.tlverilog</string>
 			</dict>
 			<dict>
+				<!-- pipes: |pipe -->
 				<key>match</key>
 				<string>\|\b([a-zA-Z0-9_]+)\b</string>
 				<key>name</key>
-				<string>keyword.control.tlverilog</string>
+				<string>entity.name.pipe.tlverilog</string>
 			</dict>
+			<dict>
+				<!-- tabs: \t -->
+				<key>match</key>
+				<string>\t</string>
+				<key>name</key>
+				<string>invalid.illegal.tlverilog</string>
+			</dict>
+			<dict>
+				<!-- Behavioral hierarchy: >start -->
+				<key>match</key>
+				<string>>([a-zA-Z0-9_]+)</string>
+				<key>name</key>
+				<string>entity.name.hierarchy.tlverilog</string>
+			</dict>
+
+			<dict>
+				<key>match</key>
+				<string>\$\b([a-zA-Z_][a-zA-Z0-9_]+)\b</string>
+				<key>name</key>
+				<string>variable.other.tlverilog</string>
+			</dict>
+
+			<dict>
+				<key>match</key>
+				<string>%([+-]\d+|\w+)</string>
+				<key>name</key>
+				<string>support.other.tlverilog</string>
+			</dict>
+
+			<dict>
+				<key>match</key>
+				<string>\b([mM]4\+\w+)</string>
+				<key>name</key>
+				<string>support.macro.tlverilog</string>
+			</dict>
+
+			<dict>
+				<key>match</key>
+				<string>\*\b([a-zA-Z_][a-zA-Z0-9_]+)\b</string>
+				<key>name</key>
+				<string>variable.sv.tlverilog</string>
+			</dict>
+
 			<dict>
 				<key>match</key>
 				<string>\b(#|@|begin|end|fork|join|join_any|join_none|forkjoin|{|})\b</string>
@@ -96,12 +141,12 @@ PUBLIC '-//Apple//DTD PLIST 1.0//EN'
 				<key>name</key>
 				<string>constant.other.preprocessor.tlverilog</string>
 			</dict>
-			<dict>
+			<!--<dict>
 				<key>match</key>
 				<string>`\b([a-zA-Z_][a-zA-Z0-9_]*)\b</string>
 				<key>name</key>
 				<string>constant.other.define.tlverilog</string>
-			</dict>
+			</dict>-->
 			<dict>
 				<key>include</key>
 				<string>#comments</string>
@@ -148,7 +193,7 @@ PUBLIC '-//Apple//DTD PLIST 1.0//EN'
 				<key>include</key>
 				<string>#all-types</string>
 			</dict>
-			<dict>
+			<!--<dict>
 				<key>match</key>
 				<string>(==|===|!=|!==|&lt;=|&gt;=|&lt;|&gt;)</string>
 				<key>name</key>
@@ -165,13 +210,13 @@ PUBLIC '-//Apple//DTD PLIST 1.0//EN'
 				<string>(!|&amp;&amp;|\|\||\bor\b)</string>
 				<key>name</key>
 				<string>keyword.operator.logical.tlverilog</string>
-			</dict>
-			<dict>
+			</dict>-->
+			<!--<dict>
 				<key>match</key>
 				<string>(&amp;|\||\^|~|{|}|&lt;&lt;|&gt;&gt;|\?|:)</string>
 				<key>name</key>
 				<string>keyword.operator.bitwise.tlverilog</string>
-			</dict>
+			</dict>-->
 			<dict>
 				<key>match</key>
 				<string>'\s*\(.+\)</string>
@@ -227,18 +272,18 @@ PUBLIC '-//Apple//DTD PLIST 1.0//EN'
 				<key>include</key>
 				<string>#strings</string>
 			</dict>
-			<dict>
+			<!--<dict>
 				<key>match</key>
 				<string>\$\b([a-zA-Z_][a-zA-Z0-9_]*)\b</string>
 				<key>name</key>
 				<string>support.function.tlverilog</string>
-			</dict>
-			<dict>
+			</dict>-->
+			<!--<dict>
 				<key>match</key>
 				<string>\b([A-Z][A-Z0-9_]+)\b</string>
 				<key>name</key>
 				<string>constant.other.tlverilog</string>
-			</dict>
+			</dict>-->
 		</array>
 		<key>repository</key>
 		<dict>

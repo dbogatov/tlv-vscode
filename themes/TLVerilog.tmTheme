@@ -23,6 +23,119 @@
 				<string>#49483E</string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Illegal</string>
+			<key>scope</key>
+			<string>invalid.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Pipe</string>
+			<key>scope</key>
+			<string>entity.name.pipe</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F7C143</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Pipe stage</string>
+			<key>scope</key>
+			<string>entity.name.stage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5A8325</string>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Behavioral Hierarchy</string>
+			<key>scope</key>
+			<string>entity.name.hierarchy</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#20A0C0</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#68389A</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Alignment</string>
+			<key>scope</key>
+			<string>support.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5BCC6B</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>M4 MAcro</string>
+			<key>scope</key>
+			<string>support.macro.tlverilog</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>SV signal</string>
+			<key>scope</key>
+			<string>variable.sv.tlverilog</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B7B7B7</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Numeric constant</string>
+			<key>scope</key>
+			<string>constant.numeric.tlverilog</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#1F57C5</string>
+			</dict>
+		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -30,8 +143,10 @@
 			<string>comment</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic bold</string>
 				<key>foreground</key>
-				<string>#75715E</string>
+				<string>#B7B7B7</string>
 			</dict>
 		</dict>
 		<dict>
