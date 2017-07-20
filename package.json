@@ -47,7 +47,7 @@
 		"themes": [
             {
                 "label": "TLVerilog",
-                "uiTheme": "vs-dark",
+                "uiTheme": "vs",
                 "path": "./themes/tlverilog-color-theme.json"
             }
         ]
