@@ -1,7 +1,7 @@
 {
 	"name": "TL-Verilog",
 	"description": "TL-Verilog support for VS Code",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "bogatov",
 	"repository": {
 		"type": "git",
