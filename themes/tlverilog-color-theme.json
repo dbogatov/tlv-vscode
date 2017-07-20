@@ -20,14 +20,14 @@
 		},
 		{
 			"name": "Pipe",
-			"scope": "entity.name.pipe",
+			"scope": "entity.name.pipe.tlverilog",
 			"settings": {
-				"foreground": "#F7C143"
+				"foreground": "#ffa500"
 			}
 		},
 		{
 			"name": "Pipe stage",
-			"scope": "entity.name.stage",
+			"scope": "entity.name.stage.tlverilog",
 			"settings": {
 				"foreground": "#5A8325",
 				"fontStyle": "italic"
@@ -35,21 +35,21 @@
 		},
 		{
 			"name": "Behavioral Hierarchy",
-			"scope": "entity.name.hierarchy",
+			"scope": "entity.name.hierarchy.tlverilog",
 			"settings": {
 				"foreground": "#20A0C0"
 			}
 		},
 		{
 			"name": "Variable",
-			"scope": "variable.other",
+			"scope": "variable.other.tlverilog",
 			"settings": {
-				"foreground": "#68389A"
+				"foreground": "#800080"
 			}
 		},
 		{
 			"name": "Alignment",
-			"scope": "support.other",
+			"scope": "support.other.tlverilog",
 			"settings": {
 				"foreground": "#5BCC6B"
 			}
@@ -66,7 +66,7 @@
 			"name": "SV signal",
 			"scope": "variable.sv.tlverilog",
 			"settings": {
-				"foreground": "#B7B7B7"
+				"foreground": "#8b0000"
 			}
 		},
 		{
@@ -78,10 +78,46 @@
 		},
 		{
 			"name": "Comment",
-			"scope": "support.macro.tlverilog",
+			"scope": "comment",
 			"settings": {
-				"foreground": "#B7B7B7",
+				"foreground": "#808080",
 				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Code Region Id",
+			"scope": "keyword.region.tlverilog",
+			"settings": {
+				"foreground": "#00008b",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "When",
+			"scope": "keyword.control.conditional.tlverilog",
+			"settings": {
+				"foreground": "#f04000"
+			}
+		},
+		{
+			"name": "Keywords 1",
+			"scope": "keyword.control.tlverilog",
+			"settings": {
+				"foreground": "#368"
+			}
+		},
+		{
+			"name": "Keywords 2",
+			"scope": "support.function.tlverilog",
+			"settings": {
+				"foreground": "#368"
+			}
+		},
+		{
+			"name": "Keywords 3",
+			"scope": "keyword.other.tlverilog",
+			"settings": {
+				"foreground": "#368"
 			}
 		},
 		{
@@ -102,12 +138,12 @@
 				"foreground": "#000080"
 			}
 		},
-		{
-			"scope": "comment",
-			"settings": {
-				"foreground": "#008000"
-			}
-		},
+		// {
+		// 	"scope": "comment",
+		// 	"settings": {
+		// 		"foreground": "#008000"
+		// 	}
+		// },
 		{
 			"scope": "constant.language",
 			"settings": {

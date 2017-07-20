@@ -53,6 +53,22 @@ PUBLIC '-//Apple//DTD PLIST 1.0//EN'
 			</dict>
 
 			<dict>
+				<!-- Behavioral hierarchy: /start -->
+				<key>match</key>
+				<string>\/([a-zA-Z0-9_]+)</string>
+				<key>name</key>
+				<string>entity.name.hierarchy.tlverilog</string>
+			</dict>
+
+			<dict>
+				<!-- When condition: ?$lol | ?*lol -->
+				<key>match</key>
+				<string>\?[\$\*][a-zA-Z0-9_]+</string>
+				<key>name</key>
+				<string>keyword.control.conditional.tlverilog</string>
+			</dict>
+
+			<dict>
 				<key>match</key>
 				<string>\$\b([a-zA-Z_][a-zA-Z0-9_]+)\b</string>
 				<key>name</key>
@@ -71,6 +87,13 @@ PUBLIC '-//Apple//DTD PLIST 1.0//EN'
 				<string>\b([mM]4\+\w+)</string>
 				<key>name</key>
 				<string>support.macro.tlverilog</string>
+			</dict>
+
+			<dict>
+				<key>match</key>
+				<string>^\s*\\(TLV.*|SV.*|m4_TLV_version.*)$</string>
+				<key>name</key>
+				<string>keyword.region.tlverilog</string>
 			</dict>
 
 			<dict>
