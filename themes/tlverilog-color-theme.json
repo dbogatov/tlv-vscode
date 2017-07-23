@@ -49,7 +49,7 @@
 		},
 		{
 			"name": "Alignment",
-			"scope": "support.other.tlverilog",
+			"scope": "entity.name.alignment.tlverilog",
 			"settings": {
 				"foreground": "#5BCC6B"
 			}
@@ -97,6 +97,13 @@
 			"scope": "keyword.control.conditional.tlverilog",
 			"settings": {
 				"foreground": "#f04000"
+			}
+		},
+		{
+			"name": "Constants",
+			"scope": "constant.other.tlverilog",
+			"settings": {
+				"foreground": "#274659"
 			}
 		},
 		{
