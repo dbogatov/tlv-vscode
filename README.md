@@ -1,4 +1,4 @@
-# TL-Verilog support for VSCode [![build status](https://git.dbogatov.org/dbogatov/TL-Verilog-VSCode/badges/master/build.svg)](https://git.dbogatov.org/dbogatov/TL-Verilog-VSCode/commits/master)
+# TL-Verilog support for VSCode
 
 TL-Verilog support inspired by [SystemVerilog extension](https://github.com/mshr-h/vscode-systemverilog-support).
 
