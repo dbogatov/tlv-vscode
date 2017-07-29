@@ -16,7 +16,7 @@ TL-Verilog support inspired by [SystemVerilog extension](https://github.com/mshr
 ## Git repos
 
 - Personal, main: [dbogatov/TL-Verilog-VSCode](https://git.dbogatov.org/dbogatov/TL-Verilog-VSCode)
-- GitHub, mirror: [TBD](TBD)
+- GitHub, mirror: [TBD](https://dbogatov.org)
 
 ## Repository organization
 
@@ -33,7 +33,7 @@ README.md                     readme
 ```
 
 ## Contributing
-1. Fork it ( [TBD](TBD) )
+1. Fork it ( [TBD](https://dbogatov.org) )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -41,7 +41,7 @@ README.md                     readme
 
 ## See also
 
-[TBD](TBD)
+[TBD](https://dbogatov.org)
 
 ## License
 
