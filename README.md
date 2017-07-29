@@ -41,7 +41,7 @@ README.md                     readme
 
 ## See also
 
-[TBD](https://dbogatov.org)
+[TL-Verilog](https://marketplace.visualstudio.com/items?itemName=Dmytro.TL-Verilog)
 
 ## License
 
