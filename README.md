@@ -2,6 +2,14 @@
 
 TL-Verilog support inspired by [SystemVerilog extension](https://github.com/mshr-h/vscode-systemverilog-support).
 
+## How to use
+
+* Install `TL-Verilog` extension (eq. search "tlv" in extensions tab)
+* Reload VSCode (it will prompt you)
+* Set color theme to `TLVeriolg` ( Cmd/Ctrl + Shift + P -> "color theme")
+* Open .tlv file
+* Enjoy
+
 ## Features
 
 ### Done
