@@ -5,7 +5,7 @@
 	"publisher": "bogatov",
 	"repository": {
 		"type": "git",
-		"url": "https://git.dbogatov.org/dbogatov/TL-Verilog-VSCode"
+		"url": "https://github.com/Dima4ka/tlv-vscode"
 	},
 	"engines": {
 		"vscode": "^1.10.0"
