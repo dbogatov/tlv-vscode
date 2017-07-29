@@ -1,7 +1,7 @@
 {
 	"name": "TL-Verilog",
 	"description": "TL-Verilog support for VS Code",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"publisher": "bogatov",
 	"repository": {
 		"type": "git",
@@ -42,7 +42,7 @@
 		},
 		"commands": [{
 			"command": "extension.tlverilog.instantiateModule",
-			"title": "System Verilog: Instantiate Module"
+			"title": "TL Verilog: Instantiate Module"
 		}],
 		"themes": [
             {
